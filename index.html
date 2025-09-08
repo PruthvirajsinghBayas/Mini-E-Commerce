@@ -45,9 +45,24 @@
         </div>
     </div>
     <br>
-    <div class="container mt-2">
-        <div class="row" id="renderCard"></div>
+    <div class="container mt-2 mb-2 w-25 mx-auto">
+    <div class="input-group">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+        <button class="btn btn-outline-success" onclick="searchProducts()">Search</button>
     </div>
+    <div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle mt-2" data-bs-toggle="dropdown" aria-expanded="false">
+    Search By Brand
+  </button>
+  <ul class="dropdown-menu" id="rendeBrands"></ul>
+</div>
+</div>
+
+<!-- render products  -->
+<div class="container mt-2">
+    <div class="row" id="renderCard"></div>
+</div>
+
 
 
 
