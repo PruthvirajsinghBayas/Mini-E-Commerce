@@ -49,13 +49,16 @@ const watches = [
 reanderCardElmt = document.querySelector("#renderCard");
 searchElmt = document.querySelector("#searchInput")
 
-function searchProducts(){
-  console.log("clicked")
-    searchWord = searchElmt.value
-    console.log(searchWord)
-    let renderProductsArray = watches.filter((p)=>p.title.toLowerCase().includes(searchWord))
-    renderProducts(renderProductsArray)
+function searchProducts() {
+  console.log("clicked");
+  const searchWord = searchElmt.value.toLowerCase();
+  console.log(searchWord);
+  let renderProductsArray = watches.filter((p) =>
+    p.title.toLowerCase().includes(searchWord)
+  );
+  renderProducts(renderProductsArray);
 }
+
 
 
 function renderProducts(renderProd){
